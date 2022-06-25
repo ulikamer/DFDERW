@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  background: #000;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  padding: 1.5em;
+  width: 350px;
+  height: 350px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff1a;
+  border-radius: 25px;
+  z-index: 1;
+  border: 2px solid #ffffff1a;
+  text-align: center;
+  backdrop-filter: blur(2rem);
+}
+
+.profile_pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.profile_pic img {
+  width: 100%;
+}
+
+.glass h2 {
+  color: #ffffff90;
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+
+.glass p {
+  color: #ffffff60;
+  font-size: 14px;
+}
+
+.socials {
+  margin-top: 35px;
+}
+.socials i {
+  color: #ffffff85;
+  margin: 0 10px;
+  font-size: 25px;
+}
+.socials i:hover {
+  color: #ffffff99;
+}
+
+.circle1,
+.circle2 {
+  width: 14em;
+  height: 14em;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  box-shadow: 0 0 50px #5622ff;
+  background: linear-gradient(-180deg, #5622ff, #4190fd);
+  top: 10%;
+  right: 30%;
+}
+
+.circle2 {
+  box-shadow: 0 0 48px #d84869;
+  background: linear-gradient(-26deg, #d84869, #f46641);
+  bottom: 5%;
+  left: 25%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .circle1 {
+    top: 15%;
+    right: 15%;
+  }
+
+  .circle2 {
+    left: 15%;
+    bottom: 15%;
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .glass {
+    width: 80%;
+  }
+
+  .glass h2 {
+    font-size: 0.9rem;
+  }
+  .glass p {
+    font-size: 0.9rem;
+  }
+
+  .socials i {
+    font-size: 1rem;
+  }
+
+  .circle1,
+  .circle2 {
+    width: 9em;
+    height: 9em;
+  }
+
+  .circle1 {
+    top: 15%;
+    right: 3%;
+  }
+
+  .circle2 {
+    left: 5%;
+    bottom: 15%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .circle1,
+  .circle2 {
+    width: 7em;
+    height: 7em;
+  }
+
+  .glass h2 {
+    font-size: 0.8rem;
+  }
+  .glass p {
+    font-size: 0.8rem;
+  }
+
+  .socials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+  }
+}
